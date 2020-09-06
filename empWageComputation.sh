@@ -1,2 +1,11 @@
-#!/bin/bash -x
-echo"Welocme to Employee Wage Computaion Program on Master Branch"
+
+
+
+
+
+
+
+#UC2
+WageperHour=20
+FullDayHour=8
+DailyWageEmployeeFullDay=$(( $WageperHour * $FullDayHour ))

@@ -1,2 +1,6 @@
-#!/bin/bash -x
-echo"Welocme to Employee Wage Computaion Program on Master Branch"
+
+
+
+#UC1
+declare -A dailyWageArray
+PresentOrAbsent=$((RANDOM%3))

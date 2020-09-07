@@ -1,11 +1,6 @@
 
 
 
-
-
-
-
-#UC2
-WageperHour=20
-FullDayHour=8
-DailyWageEmployeeFullDay=$(( $WageperHour * $FullDayHour ))
+#UC1
+declare -A dailyWageArray
+PresentOrAbsent=$((RANDOM%3))

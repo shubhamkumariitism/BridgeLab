@@ -7,4 +7,7 @@ PresentOrAbsent=$((RANDOM%3))
 WageperHour=20
 FullDayHour=8
 DailyWageEmployeeFullDay=$(( $WageperHour * $FullDayHour ))
->>>>>>> UC2
+#UC3
+PartTimeHour=8
+DailyWageEmployeePartDay=$(( $WageperHour * $PartTimeHour ))
+

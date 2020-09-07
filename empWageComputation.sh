@@ -42,6 +42,16 @@ case PresentOrAbsent in
 				EmpWageForMonth=$(( $DailyWageEmployeePartDay *$EmpWorkingPerMonth ))
 				echo "Employee Wage For a Month For Part Time" $EmpWageForMonth
 
+#UC7
+getWorkingDays()
+{
+         case $1 in
+                1)
+                empHrs=$FullDayHour
+                ;;
+
+                2)
+                empHrs=$PartTimeHour
                 ;;
                 *)
                 empHrs=0
@@ -62,4 +72,8 @@ do
         dailyWageArray["Day"$totalWorkingDays]=$dailyWage
         totalEmpHrs=$(($totalEmpHrs+$empHrs))
 done
->>>>>>> UC6
+        esac
+        return $empHrs
+
+}
+

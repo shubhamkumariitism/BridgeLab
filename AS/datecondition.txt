@@ -1,0 +1,12 @@
+marcon=$(( (($day >= 20)) && (($day <= 31)) ))
+aprcon=$(( (($day >= 1)) && (($day <= 30 )) ))
+maycon=$(( (($day >= 1)) && (($day <= 31)) ))
+juncon=$(( (($day >= 1)) && (($day <= 20)) ))
+if (( (($month == 3)) && (($marcon == 1)) )) || (( (($month==4)) && (($aprcon==1))
+)) || (( (($month==5)) && (($maycon==1)) )) || (( (($month==6)) && (($juncon==1))
+))
+then
+echo "True"
+else
+echo "False"
+f
